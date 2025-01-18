@@ -70,7 +70,7 @@ const FileUpload = ({ onFileChange }: Props) => {
   return (
     <ImageKitProvider
       publicKey={publicKey}
-      urlEndpoint={urlEndpoint}
+      urlEndpoint={urlEndpoint} // @ts-ignore
       authenticator={authenticator}>
       <IKUpload
         className="hidden"
